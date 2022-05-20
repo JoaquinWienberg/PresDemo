@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Mukta:wght@500&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Mukta:wght@500&family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loader-container{
+    font-family: 'Lato', sans-serif;
+    color: #4cc9f0;
+    margin: auto;
+    width: clamp (400px, 50%, 700px);
+
+}
+
+.loader-container *{
+    width: clamp (400px, 50%, 700px) !important;
+    text-align: center;
+}
+
+.eolic-container {
+    position: absolute;
+    right: 70%;
+    top: 30%
+}
+
+.upstream-container {
+    position: absolute;
+    right: 40%;
+    top: 30%
+}
+
+/* LINE EFFECTS */
+
+.effectLines {
+    background-color: #4cc9f0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left:0px;
+    width: 250px;
+    animation: lines 2s linear;
+}
+
+@keyframes lines {
+
+    0%{
+        height: 10px;
+        left:200px;
+        width: 10px;
+    }
+
+    50% {
+        height: 100%;
+        left:200px;
+        width: 10px;
+    }
+
+    75% {
+        height: 100%;
+        left: 100px;
+        width: 10px;
+    }
+
+    100%{
+        width: 250px;
+        left: 0;
+    }
+    
+}
+
+.effectLines2 {
+    background-color: #4cc9f0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right:0px;
+    width: 250px;
+    animation: lines2 2s linear;
+}
+
+@keyframes lines2 {
+
+    0%{
+        height: 10px;
+        right:200px;
+        width: 10px;
+    }
+
+    50% {
+        height: 100%;
+        right:200px;
+        width: 10px;
+    }
+
+    75% {
+        height: 100%;
+        right: 100px;
+        width: 10px;
+    }
+
+    100%{
+        width: 250px;
+        right: 0;
+    }
+    
+}
+

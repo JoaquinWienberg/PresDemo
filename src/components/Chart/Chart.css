@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Mukta:wght@500&family=Press+Start+2P&display=swap');
+
+.chartFont *{
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300 !important;
+    overflow: visible;
+}
+
+.css-lq81ce-MuiTableRow-root{
+    transition: all 0.5s;
+    overflow: visible;
+}
+
+.css-lq81ce-MuiTableRow-root:hover{
+    transform: scale(1.02);
+    background-color: #e5e5e5;
+    overflow: visible;
+
+}

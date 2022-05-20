@@ -1,0 +1,64 @@
+/* EOLIC IMG */
+
+.Eolic {
+    position: relative;
+    max-width: 180px;
+}
+
+.EolicWing {
+    position: absolute;
+    animation: spin 1s infinite linear;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+.EolicPole {
+    position: absolute;
+    left: 52px;
+    top: 80px;
+    z-index: 1;
+}
+
+/* UPSTREAM IMG */
+
+.Upstream {
+    position: relative;
+    max-width: 180px;
+    top: 50px;
+}
+
+.UpstreamUpper {
+    position: absolute;
+    animation: spin2 3.5s infinite ease-in-out;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+@keyframes spin2 {
+    0% {
+        transform: rotate(-35deg)
+    }
+
+    50% {
+        transform: rotate(0deg)
+    }
+    
+    100% {
+        transform: rotate(-35deg)
+    }
+}
+
+.UpstreamLower {
+    position: absolute;
+    left: 12px;
+    top: 70px;
+    z-index: 1;
+}

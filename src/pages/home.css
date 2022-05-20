@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Mukta:wght@500&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Mukta:wght@500&family=Press+Start+2P&display=swap');
+
+
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+.homePage {
+    background: rgb(70,152,238);
+    background: linear-gradient(180deg, rgba(70,152,238,1) 13%, rgba(255,255,255,1) 78%);
+    min-height: 100vh;
+}
+
+.homePage h1 {
+    font-size: 45px;
+    padding-top: 80px;
+    text-align: justify;
+    margin-left: 20%;
+    color: white;
+    border-bottom: solid 3px white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+}
+
+.homePage h3 {
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: justify;
+    margin-left: 22%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.divContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10%;
+    justify-content: space-around;
+    width: clamp(600px, 100%, 1200px);
+    margin: 6rem auto;
+    align-items: center;
+}
+
+.divContainer div{
+    width: clamp(400px, 50%, 600px);
+    height:clamp(300px, 50%, 600px); 
+}
+
+.divContainer div h3{
+    font-size: 20px;
+    color: black;
+}
+
+.divContainer div div{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.h2-title {
+    align-self: top;
+    font-family: 'Lato', sans-serif;
+}
+
+

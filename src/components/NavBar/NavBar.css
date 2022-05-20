@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Mukta:wght@500&family=Press+Start+2P&display=swap');
+
+.NavBar {
+    display: flex;
+    width: clamp (400px, 100%, 700px);
+    justify-content: space-around;
+    padding: 10px 60px;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 80px;
+}
+
+.NavBar .navBarItem{
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin: 2px 20px;
+    position: relative;
+    border-radius: 20px;
+    padding: 4px 15px;
+    background-color: rgb(20, 20, 73);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    width: clamp(70px, 50%, 200px);
+}
+
+.navBarItem::before {
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    content: "";
+    left: -25%;
+    top: -25%;      
+}
+
+.navBarItem:hover::before{
+    animation: rotate 2s infinite linear;
+}
+
+.navBarItem::after {
+    position: absolute;
+    width: 91%;
+    height: 89%;
+    background-color: #020223;
+    content: "";
+    top: 5%;
+    left: 5%;
+    border-radius: 20px;
+}
+
+@keyframes rotate {
+    0%{
+        background: conic-gradient(from 90deg, rgb(0 0 0/ 0%) 50%, rgb( 11 78 230 / 9%) 60%, rgb(0 220 255) 100%); 
+    }
+    100% {
+        background: conic-gradient(from 90deg, rgb(0 0 0/ 0%) 50%, rgb( 11 78 230 / 9%) 60%, rgb(0 220 255) 100%);
+        transform: rotate(360deg);
+    }
+}
+
+.navBarItem a{
+    text-decoration: none;
+    color: white;
+    z-index: 2;
+    position: relative;
+}
